@@ -5,15 +5,15 @@ rvm:
   - 2.1.5
   - 2.0.0
   - 1.9.3
-  
+
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
-  
+
 cache: true
-  
+
 notifications:
   email:
     recipients:
-      - jbowes@dashingrocket.com
+      - michael_r_levin@yahoo.com
     on_success: change
     on_failure: always

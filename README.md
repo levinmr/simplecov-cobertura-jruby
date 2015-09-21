@@ -1,17 +1,20 @@
-# simplecov-cobertura 
-[![Build Status](https://api.shippable.com/projects/549b1fbbd46935d5fbc0f9f3/badge?branchName=master)](https://app.shippable.com/projects/549b1fbbd46935d5fbc0f9f3/builds/latest) [![Gem Version](https://badge.fury.io/rb/simplecov-cobertura.svg)](http://badge.fury.io/rb/simplecov-cobertura) [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/simplecov-cobertura?type=total)](https://rubygems.org/gems/simplecov-cobertura)
+# simplecov-cobertura-jruby
 
 Produces [Cobertura](http://cobertura.sourceforge.net/) formatted XML from [SimpleCov](https://github.com/colszowka/simplecov).
 
-Output can be consumed by the [Jenkins Cobertura Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin) for easy 
+Output can be consumed by the [Jenkins Cobertura Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin) for easy
 coverage visualization.
+
+## Note
+
+This gem was forked from [simplecov-cobertura](https://github.com/dashingrocket/simplecov-cobertura).  Please refer to that gem for use with C Extension Ruby Versions
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simplecov-cobertura'
+gem 'simplecov-cobertura-jruby'
 ```
 
 And then execute:
@@ -20,33 +23,22 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install simplecov-cobertura
+    $ gem install simplecov-cobertura-jruby
 
 ## Usage
 
 ```ruby
-require 'simplecov-cobertura'
+require 'simplecov-cobertura-jruby'
 
 SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 ```
 
-## Continuous Integration
-Tested in a CI environment against the following Ruby versions:
-* 2.1
-* 2.0.0
-* 1.9
-
 ## Known Limitations
 * No support for branch coverage
 
-## Troubleshooting
-If you get an error about not being able to install the libxml-ruby gem, do the following
-    
-    $ sudo apt-get install libxml2-dev
-
 ## Contributing
 
-1. Fork it ( https://github.com/dashingrocket/simplecov-cobertura/fork )
+1. Fork it ( https://github.com/levinmr/simplecov-cobertura-jruby/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
