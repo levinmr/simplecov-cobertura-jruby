@@ -31,9 +31,7 @@ class SimpleCov::Formatter::CoberturaFormatter
                    'version' => '0',
                    'timestamp' => Time.now.to_i.to_s) do
         xml.sources do
-          xml.source do
-            SimpleCov.root
-          end
+          xml.source SimpleCov.root
         end
 
         xml.packages do
